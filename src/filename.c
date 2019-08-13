@@ -185,6 +185,8 @@ const char * dcc_preproc_exten(const char *e)
                || !strcmp(e, "cp") || !strcmp(e, "c++")
                || !strcmp(e, "C") || !strcmp(e, "ii")) {
         return ".ii";
+	} else if(!strcmp(e, "cfa")) {
+		return ".cfa";
     } else if(!strcmp(e,"mi") || !strcmp(e, "m")) {
         return ".mi";
     } else if(!strcmp(e,"mii") || !strcmp(e,"mm")
@@ -252,6 +254,7 @@ int dcc_is_source(const char *sfile)
             || !strcmp(ext, "cpp")
             || !strcmp(ext, "cxx")
             || !strcmp(ext, "cp")
+            || !strcmp(ext, "cfa")
             || !strcmp(ext, "c++");
     case 'C':
         return !strcmp(ext, "C");
