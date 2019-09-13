@@ -186,7 +186,7 @@ const char * dcc_preproc_exten(const char *e)
                || !strcmp(e, "C") || !strcmp(e, "ii")) {
         return ".ii";
 	} else if(!strcmp(e, "cfa")) {
-		return ".cfa";
+		return ".ifa";
     } else if(!strcmp(e,"mi") || !strcmp(e, "m")) {
         return ".mi";
     } else if(!strcmp(e,"mii") || !strcmp(e,"mm")
